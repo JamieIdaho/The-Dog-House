@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Dog House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/vendor/foundation.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="Doggies">
+
+  <nav>
+    <a href="#/">Home</a> |
+    <a href="#/reservation">Make A Reservation</a> |
+    <a href="#/about">About Us</a> |
+    <a href="#/current">Current Dogs and Statuses</a>
+
+
+
+  </nav>
+
+  <div class="container" ng-view></div>
+
+  <!-- VENDOR -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/underscore.js"></script>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-route.js"></script>
+
+  <!-- MAIN -->
+  <script src="js/main.js"></script>
+  <script src="js/doggies/doggie.controller.js"></script>
+  <script src="js/doggies/doggielist.controller.js"></script>
+
+
+</body>
+</html>
