@@ -3,6 +3,36 @@
   margin: 25px auto;
 }
 
+nav {
+  width: 100%;
+  margin: 25px 75px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
+}
+
+.currentDog {
+  position: relative;
+}
+
+.currentDog::before {
+  position: absolute;
+  content: '\f1b0';
+  font-family: FontAwesome;
+  left: -35px;
+  top: -5px;
+  font-size: 30px;
+}
+
+.name {
+  color: red;
+  font-weight: bold;
+}
+
+.breed {
+  color: #008CBA;
+  font-weight: bold;
 }

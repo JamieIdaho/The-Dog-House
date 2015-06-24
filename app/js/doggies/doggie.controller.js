@@ -20,7 +20,7 @@
         var dog = new Doggie(x);
         $http.post(PARSE.URL + 'classes/Doggies', dog, PARSE.CONFIG)
         .success(function () {
-          $location.path('/');
+          $location.path('/current');
           $scope.dog = {};
         });
       };
