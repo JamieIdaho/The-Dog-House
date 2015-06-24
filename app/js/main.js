@@ -2,8 +2,9 @@
 
   'use strict';
 
-  angular.module('Doggies', [ngRoute])
+  angular.module('Doggies', ['ngRoute'])
 
+  //setting up Parse
   .constant('PARSE', {
 
     URL: 'https://api.parse.com/1/',
@@ -18,21 +19,25 @@
 
   .config([ '$routeProvider', function ($routeProvider) {
 
+    //home page
     $routeProvider.when('/', {
-      controller: 'Doggies',
+      controller: 'Doggie',
       templateUrl: 'js/doggies/home.tpl.html'
     })
 
+    //reservation page
     .when('/reservation', {
-      controller: 'Doggies',
+      controller: 'Doggie',
       templateUrl: 'js/doggies/reservation.tpl.html'
     })
 
+    //about page
     .when('/about', {
-      controller: 'Doggies',
+      controller: 'Doggie',
       templateUrl: 'js/doggies/about.tpl.html'
     })
 
+    //current status page
     .when('/current', {
       controller: 'DoggieList',
       templateUrl: 'js/doggies/current.tpl.html'
