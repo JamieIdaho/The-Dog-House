@@ -1,9 +1,11 @@
-## Welcome to My Angular Project
+## Welcome to The Dog House, A Doggie Hotel!
 
-> I am your Readme.md file, you should probably update me.
+This is a simple CRUD application built using Angular and Parse. It contains two controllers, different templates, ngView and ngRoute.
 
 
 ## Usage
+
+To clone this app, run npm install and bower install before use.
 
 This template contains some simple `gulp` tasks. They are as follows:
 
