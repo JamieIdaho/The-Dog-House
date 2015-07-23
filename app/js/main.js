@@ -21,7 +21,7 @@
 
     //home page
     $routeProvider.when('/', {
-      controller: 'Doggie',
+      controller: 'DoggieList',
       templateUrl: 'js/doggies/home.tpl.html'
     })
 
@@ -44,7 +44,7 @@
     });
 
 
-  }])
+  }]);
 
 }());
 

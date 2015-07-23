@@ -1,7 +1,17 @@
 <div class="welcomeBox">
 
-<h1>Welcome to The Dog House!</h1>
+<h1>Welcome to The Dog House</h1>
 
-<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLw-YHEnHyFI333Cpn2Fylariz7b5DDsCi5kpa8vSgyHLp9Rs3jQ" width="600px" height="auto"/>
+<div class="homeleft">
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLw-YHEnHyFI333Cpn2Fylariz7b5DDsCi5kpa8vSgyHLp9Rs3jQ" width="400px" height="auto" style="border-radius:5px"/>
+</div>
+
+<div class="homeright">
+<h4>Your fur pet has fur friends here ready to play:</h4>
+  <ul>
+    <li class="listDog" ng-repeat="d in doggieList"> {{ d.name }}</li>
+  </ul>
+</div>
+
 
 </div>
